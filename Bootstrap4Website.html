@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+
+  
+  <script>
+FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "msline",
+    renderAt: "chart-containerProgress",
+    width: "100%",
+    height: "400",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Test Preparation Trend",
+        yaxisname: "No of Test Cases",
+        subcaption: "",
+        showhovereffect: "1",
+        numbersuffix: "",
+        drawcrossline: "1",
+        plottooltext: "<b>$dataValue</b>-$seriesName",
+        theme: "fusion"
+      },
+      categories: [
+        {
+          category: [
+            {
+              label: "7/8"
+            },
+            {
+              label: "8/8"
+            },
+            {
+              label: "9/8"
+            },
+            {
+              label: "10/8"
+            },
+            {
+              label: "13/8"
+            },
+			 {
+              label: "14/8"
+            },
+			 {
+              label: "15/8"
+            },
+			 {
+              label: "16/8"
+            },
+			 {
+              label: "17/8"
+            }
+          ]
+        }
+      ],
+      dataset: [
+        {
+          seriesname: "Planned",
+          data: [
+            {
+              value: "10"
+            },
+            {
+              value: "20"
+            },
+            {
+              value: "30"
+            },
+            {
+              value: "40"
+            },
+            {
+              value: "50"
+            },
+			{
+              value: "60"
+            },
+			{
+              value: "70"
+            },
+			{
+              value: "80"
+            },
+			{
+              value: "90"
+            }
+          ]
+        },
+        {
+          seriesname: "Tara Harkin",
+          data: [
+            {
+              value: "16"
+            },
+            {
+              value: "28"
+            },
+            {
+              value: "34"
+            },
+            {
+              value: "42"
+            },
+            {
+              value: "54"
+            }
+          ]
+        },
+        {
+          seriesname: "Eduardo",
+          data: [
+            {
+              value: "20"
+            },
+            {
+              value: "22"
+            },
+            {
+              value: "27"
+            },
+            {
+              value: "22"
+            },
+            {
+              value: "29"
+            }
+          ]
+        },
+        {
+          seriesname: "Vishal Chavan",
+          data: [
+            {
+              value: "18"
+            },
+            {
+              value: "19"
+            },
+            {
+              value: "21"
+            },
+            {
+              value: "21"
+            },
+            {
+              value: "24"
+            }
+          ]
+        }
+      ]
+    }
+  }).render();
+});
+
+</script>
+  
+  
+<script>  
+  FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "mscolumnline3d",
+    renderAt: "chart-containerDefects",
+    width: "100%",
+    height: "400",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Defect Status Summary",
+        subcaption: "System Test",
+        numberprefix: "",
+        numbersuffix: "",
+        scrollheight: "10",
+        rotatelabels: "1",
+        numvisibleplot: "8",
+        showanchors: "0",
+        theme: "gammel"
+      },
+      categories: [
+        {
+          category: [
+            {
+              label: "New",
+			 
+            },
+            {
+              label: "In Progress"
+            },
+            {
+              label: "Assigned to Fix"
+            },
+            {
+              label: "Feedback Required"
+            },
+            {
+              label: "R&R in Development"
+            },
+            {
+              label: "Passed in Dev"
+            },
+            {
+              label: "R&R in Test"
+            },
+            {
+              label: "Passed in Test"
+            },
+            {
+              label: "R&R in Pre-prod."
+            },
+            {
+              label: "Additional Fix Required"
+            },
+            {
+              label: "Passed in Pre-Prod"
+            },
+            {
+              label: "Ready For Closure"
+            },
+            {
+              label: "Closed"
+            },
+            {
+              label: "Rejected"
+            },
+            {
+              label: "Deferred"
+            }
+           
+          ]
+        }
+      ],
+      dataset: [
+        {
+          seriesname: "Defects",
+          data: [
+            {
+              value: "5",
+			   color: "#E59866"
+            },
+            {
+              value: "5"
+            },
+            {
+              value: "3",
+			  color: "#dd051e"
+            },
+            {
+              value: "8"
+            },
+            {
+              value: "4"
+            },
+            {
+              value: "1"
+            },
+            {
+              value: "0"
+            },
+            {
+              value: "9"
+            },
+            {
+              value: "2"
+            },
+            {
+              value: "1"
+            },
+            {
+              value: "5"
+            },
+            {
+              value: "2"
+            },
+            {
+              value: "3"
+            },
+            {
+              value: "1"
+            },
+            {
+              value: "13"
+            }
+          ]
+        },
+        {
+          seriesname: "Defect Age",
+          renderas: "line",
+          data: [
+            {
+              value: "0"
+            },
+            {
+              value: "3"
+            },
+            {
+              value: "2"
+            },
+            {
+              value: "5"
+            },
+            {
+              value: "3"
+            },
+            {
+              value: "1"
+            },
+            {
+              value: "1"
+            },
+            {
+              value: "8"
+            },
+            {
+              value: "2"
+            },
+            {
+              value: "9"
+            },
+            {
+              value: "4"
+            },
+            {
+              value: "5"
+            },
+            {
+              value: "0"
+            },
+            {
+              value: "0"
+            },
+            {
+              value: "0"
+            }
+          
+          ]
+        }
+      ]
+    }
+  }).render();
+});
+
+ </script> 
+  
+  <script>
+  FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "angulargauge",
+    renderAt: "chart-containerPlanned",
+    width: "100%",
+    height: "200px",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Test Cases Planned",
+        lowerlimit: "0",
+        upperlimit: "100",
+        showvalue: "1",
+        numbersuffix: "%",
+        theme: "fusion",
+        showtooltip: "0"
+      },
+      colorrange: {
+        color: [
+          {
+            minvalue: "0",
+            maxvalue: "50",
+            code: "#F2726F"
+          },
+          {
+            minvalue: "50",
+            maxvalue: "75",
+            code: "#FFC533"
+          },
+          {
+            minvalue: "75",
+            maxvalue: "100",
+            code: "#62B58F"
+          }
+        ]
+      },
+      dials: {
+        dial: [
+          {
+            value: "81"
+          }
+        ]
+      }
+    }
+  }).render();
+});
+
+  </script>
+  
+<script src="reportgraph.js"></script>
+
+  <script>
+  FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "angulargauge",
+    renderAt: "chart-containerReviewed",
+    width: "100%",
+    height: "200px",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Test Cases Reviewed",
+        lowerlimit: "0",
+        upperlimit: "100",
+        showvalue: "1",
+        numbersuffix: "%",
+        theme: "fusion",
+        showtooltip: "0"
+      },
+      colorrange: {
+        color: [
+          {
+            minvalue: "0",
+            maxvalue: "50",
+            code: "#F2726F"
+          },
+          {
+            minvalue: "50",
+            maxvalue: "75",
+            code: "#FFC533"
+          },
+          {
+            minvalue: "75",
+            maxvalue: "100",
+            code: "#62B58F"
+          }
+        ]
+      },
+      dials: {
+        dial: [
+          {
+            value: "81"
+          }
+        ]
+      }
+    }
+  }).render();
+});
+
+  </script>
+ 
+   <script>
+  FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "angulargauge",
+    renderAt: "chart-containerUploaded",
+    width: "100%",
+    height: "200px",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Test Cases Uploaded",
+        lowerlimit: "0",
+        upperlimit: "100",
+        showvalue: "1",
+        numbersuffix: "%",
+        theme: "fusion",
+        showtooltip: "0"
+      },
+      colorrange: {
+        color: [
+          {
+            minvalue: "0",
+            maxvalue: "50",
+            code: "#F2726F"
+          },
+          {
+            minvalue: "50",
+            maxvalue: "75",
+            code: "#FFC533"
+          },
+          {
+            minvalue: "75",
+            maxvalue: "100",
+            code: "#62B58F"
+          }
+        ]
+      },
+      dials: {
+        dial: [
+          {
+            value: "81"
+          }
+        ]
+      }
+    }
+  }).render();
+});
+
+  </script>
+ 
+<style type="text/css">
+	.bs-example{
+		margin: 1px;
+	}
+</style>
+  
+  <style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+
+  <style>
+  .fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
+  </style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom" >
+<div  class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap 4 Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" >
+  <div class="row">
+    <div class="col-sm-4">
+     <div class="table-responsive" id="chart-containerProgress"></div>
+	 </div>
+    <div class="col-sm-8">
+     <div class="table-responsive" id="chart-containerDefects"></div>
+    </div>
+  </div>
+</div>
+
+
+  <h1>My First Bootstrap 4 Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+
+  <div class="row">
+    <div class="col-md-3">
+     <div class="table-responsive" id="chart-containerPlanned"></div>
+	 </div>
+    <div class="col-md-3">
+     <div class="table-responsive" id="chart-containerPrepared"></div>
+	 </div>
+    <div class="col-md-3">
+     <div class="table-responsive" id="chart-containerReviewed"></div>
+	 </div>
+    <div class="col-md-3">
+     <div class="table-responsive" id="chart-containerUploaded"></div>
+	 </div>
+  </div>
+
+<div class="table-responsive"> 
+    <table class="table table-bordered table table-hover">
+        <thead>
+            <tr>
+                <th>Row</th>
+                <th>WR</th>
+                <th>QC Item</th>
+                <th>Description</th>
+                <th>System</th>
+				<th>Functional Team</th>
+				<th>Started</th>
+				<th>Prepared</th>
+				<th>Approved by Mark</th>
+				<th>Uploaded in QC</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>CF076</td>
+                <td></td>
+                <td><p class="text-justify">A new Siteworks Reason code to be added toS1601RQ.<br>
+				The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+				</p></td>
+				<td>SRP</td>
+				<td><p class="text-left">Eduard<br>Tara Harkin<br>Vishal Chavan<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+            </tr>
+			<tr>
+                <td>2</td>
+                <td>CF076</td>
+                <td></td>
+                <td><p class="text-justify">A new Siteworks Reason code to be added toS1601RQ.<br>
+				The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+				</p></td>
+				<td>SRP</td>
+				<td><p class="text-left">Eduard<br>Tara Harkin<br>Vishal Chavan<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+            </tr>
+			<tr>
+                <td>3</td>
+                <td>CF076</td>
+                <td></td>
+                <td><p class="text-justify">A new Siteworks Reason code to be added toS1601RQ.<br>
+				The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+				</p></td>
+				<td>SRP</td>
+				<td><p class="text-left">Eduard<br>Tara Harkin<br>Vishal Chavan<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+				<td><p class="text-centereft">N<p></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+<div class="table-responsive">
+  <table class="table table-bordered">
+  <tr>
+  <!-- Nav pills -->
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#GenericUpdate">Generic Updates</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#RiskUpdate">Risk</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#IssueUpdate">Issues</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="GenericUpdate" class="container tab-pane active"><br>
+      <h3 class="text-left">Generic Update</h3>
+      <p class="text-justify">A new Siteworks Reason code to be added toS1601RQ.<br>
+				The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+				</p>
+    </div>
+    <div id="RiskUpdate" class="container tab-pane fade"><br>
+      <h3 class="text-left">Risk</h3>
+      <p class="text-justify">A new Siteworks Reason code to be added toS1601RQ.<br>
+				The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+				</p>
+    </div>
+    <div id="IssueUpdate" class="container tab-pane fade"><br>
+      <h3 class="text-left">Issues</h3>
+      <p class="text-justify">A new Siteworks Reason code to be added toS1601RQ.<br>
+				The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+				</p>
+    </div>
+  </div>
+  </tr>
+  </table>
+</div>
+
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<div class="bg-dark navbar-dark" style="margin-bottom:0;">
+  <p>Footer</p>
+</div>
+</div>
+</body>
+</html>
