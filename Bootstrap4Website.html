@@ -1,3 +1,4 @@
+-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -400,7 +401,55 @@ FusionCharts.ready(function() {
 
   </script>
   
-<script src="reportgraph.js"></script>
+<script>
+// Java Script function to prepare the Prepared Gauge Meter
+  FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "angulargauge",
+    renderAt: "chart-containerPrepared",
+    width: "100%",
+    height: "200px",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Test Cases Prepared",
+        lowerlimit: "0",
+        upperlimit: "100",
+        showvalue: "1",
+        numbersuffix: "%",
+        theme: "fusion",
+        showtooltip: "0"
+      },
+      colorrange: {
+        color: [
+          {
+            minvalue: "0",
+            maxvalue: "50",
+            code: "#F2726F"
+          },
+          {
+            minvalue: "50",
+            maxvalue: "75",
+            code: "#FFC533"
+          },
+          {
+            minvalue: "75",
+            maxvalue: "100",
+            code: "#62B58F"
+          }
+        ]
+      },
+      dials: {
+        dial: [
+          {
+            value: "81"
+          }
+        ]
+      }
+    }
+  }).render();
+});
+</script>
 
   <script>
   FusionCharts.ready(function() {
@@ -442,7 +491,7 @@ FusionCharts.ready(function() {
       dials: {
         dial: [
           {
-            value: "81"
+            value: "60"
           }
         ]
       }
@@ -492,7 +541,7 @@ FusionCharts.ready(function() {
       dials: {
         dial: [
           {
-            value: "81"
+            value: "0"
           }
         ]
       }
@@ -501,6 +550,208 @@ FusionCharts.ready(function() {
 });
 
   </script>
+ 
+ 
+ <script>
+ // Project plan
+ FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "gantt",
+    renderAt: "chart-containerProjectPlan",
+    width: "100%",
+    height: "400px",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        dateformat: "mm/dd/yyyy",
+        caption: "Event Planning Process",
+        theme: "fusion",
+        canvasborderalpha: "40",
+        ganttlinealpha: "50"
+      },
+      tasks: {
+        color: "#5D62B5",
+        task: [
+          {
+            start: "03/07/2018",
+            end: "03/17/2018"
+          },
+          {
+            start: "03/14/2018",
+            end: "03/28/2018"
+          },
+          {
+            start: "03/15/2018",
+            end: "03/31/2018"
+          },
+          {
+            start: "04/02/2018",
+            end: "04/12/2018"
+          },
+          {
+            start: "04/12/2018",
+            end: "04/30/2018"
+          },
+          {
+            start: "04/20/2018",
+            end: "05/06/2018"
+          },
+          {
+            start: "04/30/2018",
+            end: "05/10/2018"
+          },
+          {
+            start: "04/30/2018",
+            end: "05/25/2018"
+          },
+          {
+            start: "05/04/2018",
+            end: "06/05/2018"
+          }
+        ]
+      },
+      processes: {
+        headertext: "Task",
+        headeralign: "left",
+        fontsize: "14",
+        isbold: "0",
+        align: "left",
+        process: [
+          {
+            label: "Define event goals"
+          },
+          {
+            label: "Source venue options"
+          },
+          {
+            label: "Finalize speaker reach out list"
+          },
+          {
+            label: "Compose sponsorship strategy"
+          },
+          {
+            label: "Reach out to sponsors"
+          },
+          {
+            label: "Create social media campaign"
+          },
+          {
+            label: "Reach out to blogs for backlinks"
+          },
+          {
+            label: "Optimize SEO ranking"
+          },
+          {
+            label: "Publish event lead up vlog series"
+          }
+        ]
+      },
+      categories: [
+        {
+          category: [
+            {
+              start: "03/05/2018",
+              end: "03/31/2018",
+              label: "March"
+            },
+            {
+              start: "04/01/2018",
+              end: "04/30/2018",
+              label: "April"
+            },
+            {
+              start: "05/01/2018",
+              end: "05/31/2018",
+              label: "May"
+            },
+            {
+              start: "06/01/2018",
+              end: "06/10/2018",
+              label: "June"
+            }
+          ]
+        },
+        {
+          category: [
+            {
+              start: "03/05/2018",
+              end: "03/11/2018",
+              label: "W 1"
+            },
+            {
+              start: "03/12/2018",
+              end: "03/18/2018",
+              label: "W 2"
+            },
+            {
+              start: "03/19/2018",
+              end: "03/25/2018",
+              label: "W 3"
+            },
+            {
+              start: "03/26/2018",
+              end: "04/01/2018",
+              label: "W 4"
+            },
+            {
+              start: "04/02/2018",
+              end: "04/08/2018",
+              label: "W 5"
+            },
+            {
+              start: "04/09/2018",
+              end: "04/15/2018",
+              label: "W 6"
+            },
+            {
+              start: "04/16/2018",
+              end: "04/22/2018",
+              label: "W 7"
+            },
+            {
+              start: "04/23/2018",
+              end: "04/29/2018",
+              label: "W 8"
+            },
+            {
+              start: "04/30/2018",
+              end: "05/06/2018",
+              label: "W 9"
+            },
+            {
+              start: "05/07/2018",
+              end: "05/13/2018",
+              label: "W 10"
+            },
+            {
+              start: "05/14/2018",
+              end: "05/20/2018",
+              label: "W 11"
+            },
+            {
+              start: "05/21/2018",
+              end: "05/27/2018",
+              label: "W 12"
+            },
+            {
+              start: "05/28/2018",
+              end: "06/03/2018",
+              label: "W 13"
+            },
+            {
+              start: "06/04/2018",
+              end: "06/10/2018",
+              label: "W 14"
+            }
+          ]
+        }
+      ]
+    }
+  }).render();
+});
+
+ </script>
+ 
  
 <style type="text/css">
 	.bs-example{
@@ -573,10 +824,9 @@ FusionCharts.ready(function() {
 
 <div id="loader"></div>
 <div style="display:none;" id="myDiv" class="animate-bottom" >
-<div  class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
+<div  style="margin-bottom:0">
+  <h1>Project Update Page</h1>
+ </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <a class="navbar-brand" href="#">Navbar</a>
@@ -598,48 +848,6 @@ FusionCharts.ready(function() {
   </div>  
 </nav>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-</div>
-
-<div class="container" >
   <div class="row">
     <div class="col-sm-4">
      <div class="table-responsive" id="chart-containerProgress"></div>
@@ -648,11 +856,22 @@ FusionCharts.ready(function() {
      <div class="table-responsive" id="chart-containerDefects"></div>
     </div>
   </div>
-</div>
 
 
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+ <h3>Project Detail & Test Plan</h3>
+  <p>Plan</p> 
+  <div class="row">
+    <div class="col-md-4">
+     <div class="table-responsive" ></div>
+	 </div>
+    <div class="col-md-8">
+     <div class="table-responsive" id="chart-containerProjectPlan"></div>
+	 </div>
+ </div>
+
+
+  <h3>System Test Preparation</h3>
+  <p>Preparation Gauge Meter</p> 
 
   <div class="row">
     <div class="col-md-3">
