@@ -1,0 +1,1291 @@
+﻿-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard Project Page Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+
+
+    <script>
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "msline",
+                renderAt: "chart-containerProgress",
+                width: "100%",
+                height: "200",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Test Preparation Trend",
+                        yaxisname: "No of Test Cases",
+                        subcaption: "",
+                        showhovereffect: "1",
+                        numbersuffix: "",
+                        drawcrossline: "1",
+                        plottooltext: "<b>$dataValue</b>-$seriesName",
+                        theme: "fusion"
+                    },
+                    categories: [
+                        {
+                            category: [
+                                {
+                                    label: "7/8"
+                                },
+                                {
+                                    label: "8/8"
+                                },
+                                {
+                                    label: "9/8"
+                                },
+                                {
+                                    label: "10/8"
+                                },
+                                {
+                                    label: "13/8"
+                                },
+                                {
+                                    label: "14/8"
+                                },
+                                {
+                                    label: "15/8"
+                                },
+                                {
+                                    label: "16/8"
+                                },
+                                {
+                                    label: "17/8"
+                                }
+                            ]
+                        }
+                    ],
+                    dataset: [
+                        {
+                            seriesname: "Planned",
+                            data: [
+                                {
+                                    value: "10"
+                                },
+                                {
+                                    value: "20"
+                                },
+                                {
+                                    value: "30"
+                                },
+                                {
+                                    value: "40"
+                                },
+                                {
+                                    value: "50"
+                                },
+                                {
+                                    value: "60"
+                                },
+                                {
+                                    value: "70"
+                                },
+                                {
+                                    value: "80"
+                                },
+                                {
+                                    value: "90"
+                                }
+                            ]
+                        },
+                        {
+                            seriesname: "Prepared",
+                            data: [
+                                {
+                                    value: "16"
+                                },
+                                {
+                                    value: "28"
+                                },
+                                {
+                                    value: "34"
+                                },
+                                {
+                                    value: "42"
+                                },
+                                {
+                                    value: "54"
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            }).render();
+        });
+
+    </script>
+    <script>
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "msline",
+                renderAt: "chart-containerExecutionProgress",
+                width: "100%",
+                height: "60%",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Test Execution Trend",
+                        yaxisname: "No of Test Cases",
+                        subcaption: "",
+                        showhovereffect: "1",
+                        numbersuffix: "",
+                        drawcrossline: "1",
+                        plottooltext: "<b>$dataValue</b>-$seriesName",
+                        theme: "fusion"
+                    },
+                    categories: [
+                        {
+                            category: [
+                                {
+                                    label: "7/8"
+                                },
+                                {
+                                    label: "8/8"
+                                },
+                                {
+                                    label: "9/8"
+                                },
+                                {
+                                    label: "10/8"
+                                },
+                                {
+                                    label: "13/8"
+                                },
+                                {
+                                    label: "14/8"
+                                },
+                                {
+                                    label: "15/8"
+                                },
+                                {
+                                    label: "16/8"
+                                },
+                                {
+                                    label: "17/8"
+                                }
+                            ]
+                        }
+                    ],
+                    dataset: [
+                        {
+                            seriesname: "Planned",
+                            data: [
+                                {
+                                    value: "10"
+                                },
+                                {
+                                    value: "20"
+                                },
+                                {
+                                    value: "30"
+                                },
+                                {
+                                    value: "40"
+                                },
+                                {
+                                    value: "50"
+                                },
+                                {
+                                    value: "60"
+                                },
+                                {
+                                    value: "70"
+                                },
+                                {
+                                    value: "80"
+                                },
+                                {
+                                    value: "90"
+                                }
+                            ]
+                        },
+                        {
+                            seriesname: "Executed",
+                            data: [
+                                {
+                                    value: "16"
+                                },
+                                {
+                                    value: "28"
+                                },
+                                {
+                                    value: "34"
+                                },
+                                {
+                                    value: "42"
+                                },
+                                {
+                                    value: "54"
+                                }
+                            ]
+                        },
+                        
+                        {
+                            seriesname: "Passed",
+                            data: [
+                                {
+                                    value: "18"
+                                },
+                                {
+                                    value: "19"
+                                },
+                                {
+                                    value: "21"
+                                },
+                                {
+                                    value: "21"
+                                },
+                                {
+                                    value: "24"
+                                }
+                            ]
+                        },
+                        {
+                            seriesname: "Failed",
+                            data: [
+                                {
+                                    value: "0"
+                                },
+                                {
+                                    value: "2"
+                                },
+                                {
+                                    value: "4"
+                                },
+                                {
+                                    value: "3"
+                                },
+                                {
+                                    value: "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }).render();
+        });
+
+    </script>
+
+    <script>
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "mscolumnline3d",
+                renderAt: "chart-containerDefects",
+                width: "100%",
+                height: "400",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Defect Status Summary",
+                        subcaption: "System Test",
+                        numberprefix: "",
+                        numbersuffix: "",
+                        scrollheight: "10",
+                        rotatelabels: "1",
+                        numvisibleplot: "8",
+                        showanchors: "0",
+                        theme: "gammel"
+                    },
+                    categories: [
+                        {
+                            category: [
+                                {
+                                    label: "New",
+
+                                },
+                                {
+                                    label: "In Progress"
+                                },
+                                {
+                                    label: "Assigned to Fix"
+                                },
+                                {
+                                    label: "Feedback Required"
+                                },
+                                {
+                                    label: "R&R in Development"
+                                },
+                                {
+                                    label: "Passed in Dev"
+                                },
+                                {
+                                    label: "R&R in Test"
+                                },
+                                {
+                                    label: "Passed in Test"
+                                },
+                                {
+                                    label: "R&R in Pre-prod."
+                                },
+                                {
+                                    label: "Additional Fix Required"
+                                },
+                                {
+                                    label: "Passed in Pre-Prod"
+                                },
+                                {
+                                    label: "Ready For Closure"
+                                },
+                                {
+                                    label: "Closed"
+                                },
+                                {
+                                    label: "Rejected"
+                                },
+                                {
+                                    label: "Deferred"
+                                }
+
+                            ]
+                        }
+                    ],
+                    dataset: [
+                        {
+                            seriesname: "Defects",
+                            data: [
+                                {
+                                    value: "5",
+                                    color: "#334eff"
+                                },
+                                {
+                                    value: "5",
+                                    color: "#7e33ff"
+                                },
+                                {
+                                    value: "3",
+                                    color: "#f5ff33"
+                                },
+                                {
+                                    value: "8",
+                                    color: "#dd051e"
+                                },
+                                {
+                                    value: "4",
+                                    color: "#c1ff33"
+                                },
+                                {
+                                    value: "1",
+                                    color: "#60ff33"
+                                },
+                                {
+                                    value: "0",
+                                    color: "#c1ff33"
+                                },
+                                {
+                                    value: "9",
+                                    color: "#60ff33"
+                                },
+                                {
+                                    value: "2",
+                                    color: "#c1ff33"
+                                },
+                                {
+                                    value: "1",
+                                    color: "#dd051e"
+                                },
+                                {
+                                    value: "5",
+                                    color: "#60ff33"
+                                },
+                                {
+                                    value: "2",
+                                    color: "#03a961"
+                                },
+                                {
+                                    value: "3",
+                                    color: "#03a90e"
+                                },
+                                {
+                                    value: "1",
+                                    color: "#ff334e"
+                                },
+                                {
+                                    value: "13",
+                                    color: "#ff7e33"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }).render();
+        });
+
+    </script>
+
+    <script>
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "angulargauge",
+                renderAt: "chart-containerPlanned",
+                width: "100%",
+                height: "200px",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Planned",
+                        lowerlimit: "0",
+                        upperlimit: "100",
+                        showvalue: "1",
+                        numbersuffix: "%",
+                        theme: "fusion",
+                        showtooltip: "0"
+                    },
+                    colorrange: {
+                        color: [
+                            {
+                                minvalue: "0",
+                                maxvalue: "50",
+                                code: "#F2726F"
+                            },
+                            {
+                                minvalue: "50",
+                                maxvalue: "75",
+                                code: "#FFC533"
+                            },
+                            {
+                                minvalue: "75",
+                                maxvalue: "100",
+                                code: "#62B58F"
+                            }
+                        ]
+                    },
+                    dials: {
+                        dial: [
+                            {
+                                value: "81"
+                            }
+                        ]
+                    }
+                }
+            }).render();
+        });
+
+    </script>
+
+    <script>
+        // Java Script function to prepare the Prepared Gauge Meter
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "angulargauge",
+                renderAt: "chart-containerPrepared",
+                width: "100%",
+                height: "200px",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Test Cases Prepared",
+                        lowerlimit: "0",
+                        upperlimit: "100",
+                        showvalue: "1",
+                        numbersuffix: "%",
+                        theme: "fusion",
+                        showtooltip: "0"
+                    },
+                    colorrange: {
+                        color: [
+                            {
+                                minvalue: "0",
+                                maxvalue: "50",
+                                code: "#F2726F"
+                            },
+                            {
+                                minvalue: "50",
+                                maxvalue: "75",
+                                code: "#FFC533"
+                            },
+                            {
+                                minvalue: "75",
+                                maxvalue: "100",
+                                code: "#62B58F"
+                            }
+                        ]
+                    },
+                    dials: {
+                        dial: [
+                            {
+                                value: "81"
+                            }
+                        ]
+                    }
+                }
+            }).render();
+        });
+    </script>
+
+    <script>
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "angulargauge",
+                renderAt: "chart-containerReviewed",
+                width: "100%",
+                height: "200px",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Test Cases Reviewed",
+                        lowerlimit: "0",
+                        upperlimit: "100",
+                        showvalue: "1",
+                        numbersuffix: "%",
+                        theme: "fusion",
+                        showtooltip: "0"
+                    },
+                    colorrange: {
+                        color: [
+                            {
+                                minvalue: "0",
+                                maxvalue: "50",
+                                code: "#F2726F"
+                            },
+                            {
+                                minvalue: "50",
+                                maxvalue: "75",
+                                code: "#FFC533"
+                            },
+                            {
+                                minvalue: "75",
+                                maxvalue: "100",
+                                code: "#62B58F"
+                            }
+                        ]
+                    },
+                    dials: {
+                        dial: [
+                            {
+                                value: "60"
+                            }
+                        ]
+                    }
+                }
+            }).render();
+        });
+
+    </script>
+
+    <script>
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "angulargauge",
+                renderAt: "chart-containerUploaded",
+                width: "100%",
+                height: "200px",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Test Cases Uploaded",
+                        lowerlimit: "0",
+                        upperlimit: "100",
+                        showvalue: "1",
+                        numbersuffix: "%",
+                        theme: "fusion",
+                        showtooltip: "0"
+                    },
+                    colorrange: {
+                        color: [
+                            {
+                                minvalue: "0",
+                                maxvalue: "50",
+                                code: "#F2726F"
+                            },
+                            {
+                                minvalue: "50",
+                                maxvalue: "75",
+                                code: "#FFC533"
+                            },
+                            {
+                                minvalue: "75",
+                                maxvalue: "100",
+                                code: "#62B58F"
+                            }
+                        ]
+                    },
+                    dials: {
+                        dial: [
+                            {
+                                value: "0"
+                            }
+                        ]
+                    }
+                }
+            }).render();
+        });
+
+    </script>
+
+    <script>
+        // Project plan
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "gantt",
+                renderAt: "chart-containerProjectPlan",
+                width: "100%",
+                height: "400px",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        dateformat: "dd/mm/yyyy",
+                        caption: "",
+                        theme: "fusion",
+                        canvasborderalpha: "40",
+                        ganttlinealpha: "50"
+                    },
+                    tasks: {
+                        color: "",
+                        task: [
+                            {
+                                start: "07/03/2018",
+                                end: "17/03/2018"
+                            },
+                            {
+                                start: "14/03/2018",
+                                end: "28/03/2018"
+                            },
+                            {
+                                start: "15/03/2018",
+                                end: "31/03/2018"
+                            },
+                            {
+                                start: "02/04/2018",
+                                end: "12/04/2018"
+                            },
+                            {
+                                start: "12/02/2018",
+                                end: "30/04/2018"
+                            },
+                            {
+                                start: "20/04/2018",
+                                end: "06/05/2018"
+                            },
+                            {
+                                start: "30/04/2018",
+                                end: "10/05/2018"
+                            },
+                            {
+                                start: "30/04/2018",
+                                end: "25/05/2018"
+                            },
+                            {
+                                start: "04/05/2018",
+                                end: "05/06/2018"
+                            }
+                        ]
+                    },
+                    processes: {
+                        headertext: "Task",
+                        headeralign: "left",
+                        fontsize: "14",
+                        isbold: "0",
+                        align: "left",
+                        process: [
+                            {
+                                label: "Define event goals"
+                            },
+                            {
+                                label: "Source venue options"
+                            },
+                            {
+                                label: "Finalize speaker reach out list"
+                            },
+                            {
+                                label: "Compose sponsorship strategy"
+                            },
+                            {
+                                label: "Reach out to sponsors"
+                            },
+                            {
+                                label: "Create social media campaign"
+                            },
+                            {
+                                label: "Reach out to blogs for backlinks"
+                            },
+                            {
+                                label: "Optimize SEO ranking"
+                            },
+                            {
+                                label: "Publish event lead up vlog series"
+                            }
+                        ]
+                    },
+                    categories: [
+                        {
+                            category: [
+                                {
+                                    start: "05/03/2018",
+                                    end: "31/03/2018",
+                                    label: "March"
+                                },
+                                {
+                                    start: "01/04/2018",
+                                    end: "30/04/2018",
+                                    label: "April"
+                                },
+                                {
+                                    start: "01/05/2018",
+                                    end: "31/05/2018",
+                                    label: "May"
+                                },
+                                {
+                                    start: "01/06/2018",
+                                    end: "10/06/2018",
+                                    label: "June"
+                                }
+                            ]
+                        },
+                        {
+                            category: [
+                                {
+                                    start: "05/03/2018",
+                                    end: "11/03/2018",
+                                    label: "W 1"
+                                },
+                                {
+                                    start: "12/03/2018",
+                                    end: "18/03/2018",
+                                    label: "W 2"
+                                },
+                                {
+                                    start: "19/03/2018",
+                                    end: "25/03/2018",
+                                    label: "W 3"
+                                },
+                                {
+                                    start: "26/03/2018",
+                                    end: "01/04/2018",
+                                    label: "W 4"
+                                },
+                                {
+                                    start: "02/04/2018",
+                                    end: "08/04/2018",
+                                    label: "W 5"
+                                },
+                                {
+                                    start: "09/04/2018",
+                                    end: "15/04/2018",
+                                    label: "W 6"
+                                },
+                                {
+                                    start: "16/04/2018",
+                                    end: "22/04/2018",
+                                    label: "W 7"
+                                },
+                                {
+                                    start: "23/04/2018",
+                                    end: "29/04/2018",
+                                    label: "W 8"
+                                },
+                                {
+                                    start: "30/04/2018",
+                                    end: "06/05/2018",
+                                    label: "W 9"
+                                },
+                                {
+                                    start: "07/05/2018",
+                                    end: "13/05/2018",
+                                    label: "W 10"
+                                },
+                                {
+                                    start: "14/05/2018",
+                                    end: "20/05/2018",
+                                    label: "W 11"
+                                },
+                                {
+                                    start: "21/05/2018",
+                                    end: "27/05/2018",
+                                    label: "W 12"
+                                },
+                                {
+                                    start: "28/05/2018",
+                                    end: "03/06/2018",
+                                    label: "W 13"
+                                },
+                                {
+                                    start: "04/06/2018",
+                                    end: "10/06/2018",
+                                    label: "W 14"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }).render();
+        });
+
+    </script>
+
+    <style type="text/css">
+        .bs-example {
+            margin: 1px;
+        }
+    </style>
+
+    <style>
+        /* Center the loader */
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+
+    <script>
+        FusionCharts.ready(function () {
+            var myChart = new FusionCharts({
+                type: "angulargauge",
+                renderAt: "chart-containerSTProgress",
+                width: "100%",
+                height: "60%",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        captionpadding: "0",
+                        origw: "320",
+                        origh: "300",
+                        gaugeouterradius: "115",
+                        gaugestartangle: "270",
+                        gaugeendangle: "-25",
+                        showvalue: "1",
+                        valuefontsize: "30",
+                        majortmnumber: "13",
+                        majortmthickness: "2",
+                        majortmheight: "13",
+                        minortmheight: "7",
+                        minortmthickness: "1",
+                        minortmnumber: "1",
+                        showgaugeborder: "0",
+                        theme: "fusion"
+                    },
+                    colorrange: {
+                        color: [
+                            {
+                                minvalue: "0",
+                                maxvalue: "20",
+                                code: "#ff3633"
+                            },
+                            {
+                                minvalue: "20",
+                                maxvalue: "40",
+                                code: "#ff9c33"
+                            },
+                            {
+                                minvalue: "40",
+                                maxvalue: "70",
+                                code: "#96ff33"
+                            },
+                            {
+                                minvalue: "50",
+                                maxvalue: "100",
+                                code: "#33FF57"
+                            }
+                        ]
+                    },
+                    dials: {
+                        dial: [
+                            {
+                                value: "30",
+                                bgcolor: "#F20F2F",
+                                basewidth: "8"
+                            }
+                        ]
+                    },
+                    annotations: {
+                        groups: [
+                            {
+                                items: [
+                                    {
+                                        type: "text",
+                                        id: "text",
+                                        text: "% Complete",
+                                        x: "$gaugeCenterX",
+                                        y: "$gaugeCenterY + 40",
+                                        fontsize: "20",
+                                        color: "#555555"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }).render();
+        });
+
+    </script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <div style="margin-bottom:0">
+        <h1>Gas Market Changes</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h3>Project Detail & Test Plan</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tr>
+                        <th scope="row">Project Manager</th>
+                        <td scope="row"> Rob Battigan</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Workstream Lead</th>
+                        <td scope="row"> Fergal Mccarthy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Test Manager</th>
+                        <td scope="row"> Ajay Singh</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Reporting Date</th>
+                        <td scope="row" id="toDaysDate">
+                            <script>
+                                Date.prototype.toShortFormat = function () {
+
+                                    var month_names = ["Jan", "Feb", "Mar",
+                                        "Apr", "May", "Jun",
+                                        "Jul", "Aug", "Sep",
+                                        "Oct", "Nov", "Dec"];
+
+                                    var day = this.getDate();
+                                    var month_index = this.getMonth();
+                                    var year = this.getFullYear();
+
+                                    return "" + day + "-" + month_names[month_index] + "-" + year;
+                                }
+
+                                // Now any Date object can be declared
+                                var today = new Date();
+                                document.getElementById("toDaysDate").innerHTML = " " + today.toShortFormat();
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table table-bordered">
+                    <tr>
+                        <th scope="row">Test Strategy</th>
+                        <td scope="row"> Updated</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">System Test Plan</th>
+                        <td scope="row"> Signed off</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">System Integration Test Plan</th>
+                        <td scope="row"> Signed off</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">User Acceptance Test Plan</th>
+                        <td scope="row"> In Progress</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="table-responsive" id="chart-containerProjectPlan"></div>
+        </div>
+    </div>
+    <br />
+    <h3>System & Integration Test Prepartion</h3>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="table-responsive" id="chart-containerProgress"></div>
+        </div>
+        <div class="col-sm-8">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="table-responsive" id="chart-containerPrepared"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="table-responsive" id="chart-containerReviewed"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="table-responsive" id="chart-containerUploaded"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="table-responsive">
+        <table class="table table-bordered table table-hover">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>WR</th>
+                    <th>QC Item</th>
+                    <th>Description</th>
+                    <th>System</th>
+                    <th>Functional Team</th>
+                    <th>Started</th>
+                    <th>Prepared</th>
+                    <th>Approved by Mark</th>
+                    <th>Uploaded in QC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>CF076</td>
+                    <td></td>
+                    <td>
+                        <p class="text-justify">
+                            A new Siteworks Reason code to be added toS1601RQ.<br>
+                            The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+                        </p>
+                    </td>
+                    <td>SRP</td>
+                    <td><p class="text-left">Eduard<br>Tara Harkin<br>Vishal Chavan<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CF076</td>
+                    <td></td>
+                    <td>
+                        <p class="text-justify">
+                            A new Siteworks Reason code to be added toS1601RQ.<br>
+                            The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+                        </p>
+                    </td>
+                    <td>SRP</td>
+                    <td><p class="text-left">Eduard<br>Tara Harkin<br>Vishal Chavan<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>CF076</td>
+                    <td></td>
+                    <td>
+                        <p class="text-justify">
+                            A new Siteworks Reason code to be added toS1601RQ.<br>
+                            The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+                        </p>
+                    </td>
+                    <td>SRP</td>
+                    <td><p class="text-left">Eduard<br>Tara Harkin<br>Vishal Chavan<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                    <td><p class="text-centereft">N<p></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <h3>System Test Execution</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="table-responsive" id="chart-containerExecutionProgress"></div>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="table-responsive" id="chart-containerDefects"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="table-responsive" id="chart-containerSTProgress"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <br>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <!-- Nav pills -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#GenericUpdate">Project Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#RiskUpdate">Project Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#IssueUpdate">Test Preparation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#TestExecution">Test Execution</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="GenericUpdate" class="container tab-pane active">
+                        <br>
+                        <h3 class="text-left">Generic Update</h3>
+                        <p class="text-justify">
+                            A new Siteworks Reason code to be added toS1601RQ.<br>
+                            The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+                        </p>
+                    </div>
+                    <div id="RiskUpdate" class="container tab-pane fade">
+                        <br>
+                        <h3 class="text-left">Risk</h3>
+                        <p class="text-justify">
+                            A new Siteworks Reason code to be added toS1601RQ.<br>
+                            The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+                        </p>
+                    </div>
+                    <div id="IssueUpdate" class="container tab-pane fade">
+                        <br>
+                        <h3 class="text-left">Issues</h3>
+                        <p class="text-justify">
+                            A new Siteworks Reason code to be added toS1601RQ.<br>
+                            The list of possible Values for the swReasonCode attribute in the existing G1601RQ market messagwe will be expanded to the following list of values, specifically for contexts where the respective site works request is to lock the respecdtive gas point.
+                        </p>
+                    </div>
+                </div>
+            </tr>
+        </table>
+    </div>
+
+    <br />
+    <h3>System Test Preparation</h3>
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    <div class="bg-dark navbar-dark" style="margin-bottom:0;">
+        <p>Footer</p>
+    </div>
+</div>
+</body>
+</html>
